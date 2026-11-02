@@ -61,6 +61,22 @@
       gap: 1.5rem;
     }
 
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--primary-light);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+
     .title-area h1 {
       font-size: 2.25rem;
       color: var(--primary);
@@ -257,6 +273,15 @@
         flex-direction: column;
         align-items: flex-start;
       }
+      .header-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .profile-img {
+        width: 90px;
+        height: 90px;
+      }
       .item-header {
         flex-direction: column;
       }
@@ -288,9 +313,14 @@
     <!-- HEADER SECTION -->
     <header>
       <div class="header-content">
-        <div class="title-area">
-          <h1>Waqas Ahmed</h1>
-          <h2>Geospatial Data Scientist & Researcher</h2>
+        <div class="header-left">
+          <!-- Profile Image (Replace profile.jpg with your image file name) -->
+          <img src="profile.jpg" alt="Waqas Ahmed Profile Photo" class="profile-img">
+          
+          <div class="title-area">
+            <h1>Waqas Ahmed</h1>
+            <h2>Geospatial Data Scientist & Researcher</h2>
+          </div>
         </div>
         
         <!-- LINK ICONS -->
